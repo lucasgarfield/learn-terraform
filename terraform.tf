@@ -3,13 +3,14 @@
 
 terraform {
 
-  cloud {
-    organization = "organization-name"
+  # This "cloud" refers to Terraform's cloud, NOT AWS
+  # cloud {
+  #   organization = "lgarfiel"
 
-    workspaces {
-      name = "learn-terraform"
-    }
-  }
+  #   workspaces {
+  #     name = "learn-terraform"
+  #   }
+  # }
 
   required_providers {
     aws = {
